@@ -35,7 +35,7 @@ public class DateUtil {
 	 /**
 	  * 获取现在时间
 	  * 
-	  * @return返回短时间格�? yyyy-MM-dd
+	  * @return返回短时间格�? yyyy-MM-dd
 	  */
 	 public static Date getNowDateShort() {
 	  String dateString = formatter.format(new Date());
@@ -47,7 +47,7 @@ public class DateUtil {
 	 /**
 	  * 获取现在时间
 	  * 
-	  * @return返回字符串格�? yyyy-MM-dd HH:mm:ss
+	  * @return返回字符串格�? yyyy-MM-dd HH:mm:ss
 	  */
 	 public static String getStringDate() {
 	  SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -56,7 +56,7 @@ public class DateUtil {
 	 }
 	 /**
 	  * 获取现在时间
-	  * @return返回字符串格�? yyyyMMddHHmmss
+	  * @return返回字符串格�? yyyyMMddHHmmss
 	  */
 	 public static String getStringAllDate() {
 	  SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmssSSS");
@@ -74,7 +74,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 获取时间 小时:�?;�? HH:mm:ss
+	  * 获取时间 小时:�?;�? HH:mm:ss
 	  * 
 	  * @return
 	  */
@@ -160,7 +160,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 提取�?个月中的�?后一�?
+	  * 提取�?个月中的�?后一�?
 	  * 
 	  * @param day
 	  * @return
@@ -175,7 +175,7 @@ public class DateUtil {
 	 /**
 	  * 得到现在时间
 	  * 
-	  * @return 字符�? yyyyMMdd HHmmss
+	  * @return 字符�? yyyyMMdd HHmmss
 	  */
 	 public static String getStringToday() {
 	  Date currentTime = new Date();
@@ -185,10 +185,10 @@ public class DateUtil {
 	 }
 	 /**
 	  * 
-	  * 功能�?<br/>
+	  * 功能�?<br/>
 	  *
 	  * @author Tony
-	  * @version 2016�?12�?16�? 下午4:41:51 <br/>
+	  * @version 2016�?12�?16�? 下午4:41:51 <br/>
 	  */
 	 public static String getTodayShort() {
 	  Date currentTime = new Date();
@@ -198,11 +198,11 @@ public class DateUtil {
 	 }
 	 /**
 	  * 
-	  * @Description: 输入�?个整数类型的字符�?,然后转换成时分秒的形式输�?
-	  *    例如：输�?568 
+	  * @Description: 输入�?个整数类型的字符�?,然后转换成时分秒的形式输�?
+	  *    例如：输�?568 
 	  *          返回结果为：00:09:28
-	  *          输入null或�?��?��??
-	  *          返回结果�?:00:00:00
+	  *          输入null或�?��?��??
+	  *          返回结果�?:00:00:00
 	  * @param @param value
 	  * @param @return   
 	  * @return String  
@@ -249,7 +249,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 根据用户传入的时间表示格式，返回当前时间的格�? 如果是yyyyMMdd，注意字母y不能大写�?
+	  * 根据用户传入的时间表示格式，返回当前时间的格�? 如果是yyyyMMdd，注意字母y不能大写�?
 	  * 
 	  * @param sformat
 	  *            yyyyMMddhhmmss
@@ -263,7 +263,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 二个小时时间间的差�??,必须保证二个时间都是"HH:MM"的格式，返回字符型的分钟
+	  * 二个小时时间间的差�??,必须保证二个时间都是"HH:MM"的格式，返回字符型的分钟
 	  */
 	 public static String getTwoHour(String st1, String st2) {
 	  String[] kk = null;
@@ -298,7 +298,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 时间前推或后推分�?,其中JJ表示分钟.
+	  * 时间前推或后推分�?,其中JJ表示分钟.
 	  */
 	 public static String getPreTime(String sj1, String jj) {
 	  SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -314,7 +314,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 得到�?个时间延后或前移几天的时�?,nowdate(yyyy-mm-dd)为时�?,delay为前移或后延的天�?
+	  * 得到�?个时间延后或前移几天的时�?,nowdate(yyyy-mm-dd)为时�?,delay为前移或后延的天�?
 	  */
 	 public static String getNextDay(String nowdate, String delay) {
 	  try{
@@ -330,12 +330,12 @@ public class DateUtil {
 	 }
 	 /**
 	  * 
-	  * 功能�?<br/> 距离现在几天的时间是多少
-	  * 获得�?个时间字符串，格式为：yyyy-MM-dd HH:mm:ss
+	  * 功能�?<br/> 距离现在几天的时间是多少
+	  * 获得�?个时间字符串，格式为：yyyy-MM-dd HH:mm:ss
 	  * day  如果为整数，表示未来时间
 	  *      如果为负数，表示过去时间
 	  * @author Tony
-	  * @version 2016�?11�?29�? 上午11:02:56 <br/>
+	  * @version 2016�?11�?29�? 上午11:02:56 <br/>
 	  */
 	 public static String getFromNow(int day) {
 		 Date date = new Date();
@@ -352,8 +352,8 @@ public class DateUtil {
 	 public static boolean isLeapYear(String ddate) {
 
 	  /**
-	   * 详细设计�? 1.�?400整除是闰年，否则�? 2.不能�?4整除则不是闰�? 3.能被4整除同时不能�?100整除则是闰年
-	   * 3.能被4整除同时能被100整除则不是闰�?
+	   * 详细设计�? 1.�?400整除是闰年，否则�? 2.不能�?4整除则不是闰�? 3.能被4整除同时不能�?100整除则是闰年
+	   * 3.能被4整除同时能被100整除则不是闰�?
 	   */
 	  Date d = strToDate(ddate);
 	  GregorianCalendar gc = (GregorianCalendar) Calendar.getInstance();
@@ -385,7 +385,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 获取�?个月的最后一�?
+	  * 获取�?个月的最后一�?
 	  * 
 	  * @param dat
 	  * @return
@@ -409,7 +409,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 判断二个时间是否在同�?个周
+	  * 判断二个时间是否在同�?个周
 	  * 
 	  * @param date1
 	  * @param date2
@@ -425,7 +425,7 @@ public class DateUtil {
 	   if (cal1.get(Calendar.WEEK_OF_YEAR) == cal2.get(Calendar.WEEK_OF_YEAR))
 	    return true;
 	  } else if (1 == subYear && 11 == cal2.get(Calendar.MONTH)) {
-	   // 如果12月的�?后一周横跨来年第�?周的话则�?后一周即算做来年的第�?�?
+	   // 如果12月的�?后一周横跨来年第�?周的话则�?后一周即算做来年的第�?�?
 	   if (cal1.get(Calendar.WEEK_OF_YEAR) == cal2.get(Calendar.WEEK_OF_YEAR))
 	    return true;
 	  } else if (-1 == subYear && 11 == cal1.get(Calendar.MONTH)) {
@@ -436,7 +436,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 产生周序�?,即得到当前时间所在的年度是第几周
+	  * 产生周序�?,即得到当前时间所在的年度是第几周
 	  * 
 	  * @return
 	  */
@@ -450,7 +450,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 获得�?个日期所在的周的星期几的日期，如要找�?2002�?2�?3日所在周的星期一是几�?
+	  * 获得�?个日期所在的周的星期几的日期，如要找�?2002�?2�?3日所在周的星期一是几�?
 	  * 
 	  * @param sdate
 	  * @param num
@@ -461,7 +461,7 @@ public class DateUtil {
 	  Date dd = DateUtil.strToDate(sdate);
 	  Calendar c = Calendar.getInstance();
 	  c.setTime(dd);
-	  if (num.equals("1")) // 返回星期�?�?在的日期
+	  if (num.equals("1")) // 返回星期�?�?在的日期
 	   c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
 	  else if (num.equals("2")) // 返回星期二所在的日期
 	   c.set(Calendar.DAY_OF_WEEK, Calendar.TUESDAY);
@@ -479,7 +479,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 根据�?个日期，返回是星期几的字符串
+	  * 根据�?个日期，返回是星期几的字符串
 	  * 
 	  * @param sdate
 	  * @return
@@ -490,33 +490,33 @@ public class DateUtil {
 	  Calendar c = Calendar.getInstance();
 	  c.setTime(date);
 	  // int hour=c.get(Calendar.DAY_OF_WEEK);
-	  // hour中存的就是星期几了，其范�? 1~7
-	  // 1=星期�? 7=星期六，其他类推
+	  // hour中存的就是星期几了，其范�? 1~7
+	  // 1=星期�? 7=星期六，其他类推
 	  return new SimpleDateFormat("EEEE").format(c.getTime());
 	 }
 	 public static String getWeekStr(String sdate){
 	  String str = "";
 	  str = DateUtil.getWeek(sdate);
 	  if("1".equals(str)){
-	   str = "星期�?";
+	   str = "星期�?";
 	  }else if("2".equals(str)){
-	   str = "星期�?";
+	   str = "星期�?";
 	  }else if("3".equals(str)){
-	   str = "星期�?";
+	   str = "星期�?";
 	  }else if("4".equals(str)){
-	   str = "星期�?";
+	   str = "星期�?";
 	  }else if("5".equals(str)){
-	   str = "星期�?";
+	   str = "星期�?";
 	  }else if("6".equals(str)){
-	   str = "星期�?";
+	   str = "星期�?";
 	  }else if("7".equals(str)){
-	   str = "星期�?";
+	   str = "星期�?";
 	  }
 	  return str;
 	 }
 
 	 /**
-	  * 两个时间之间的天�?
+	  * 两个时间之间的天�?
 	  * 
 	  * @param date1
 	  * @param date2
@@ -527,7 +527,7 @@ public class DateUtil {
 	   return 0;
 	  if (date2 == null || date2.equals(""))
 	   return 0;
-	  // 转换为标准时�?
+	  // 转换为标准时�?
 	  java.util.Date date = null;
 	  java.util.Date mydate = null;
 	  try {
@@ -540,17 +540,17 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 形成如下的日�? �? 根据传入的一个时间返回一个结�? 星期�? 星期�? 星期�? 星期�? 星期�? 星期�? 星期�? 下面是当月的各个时间
-	  * 此函数返回该日历第一行星期日�?在的日期
+	  * 形成如下的日�? �? 根据传入的一个时间返回一个结�? 星期�? 星期�? 星期�? 星期�? 星期�? 星期�? 星期�? 下面是当月的各个时间
+	  * 此函数返回该日历第一行星期日�?在的日期
 	  * 
 	  * @param sdate
 	  * @return
 	  */
 	 public static String getNowMonth(String sdate) {
-	  // 取该时间�?在月的一�?
+	  // 取该时间�?在月的一�?
 	  sdate = sdate.substring(0, 8) + "01";
 
-	  // 得到这个月的1号是星期�?
+	  // 得到这个月的1号是星期�?
 	  Date date = DateUtil.strToDate(sdate);
 	  Calendar c = Calendar.getInstance();
 	  c.setTime(date);
@@ -560,10 +560,10 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 取得数据库主�? 生成格式为yyyymmddhhmmss+k位随机数
+	  * 取得数据库主�? 生成格式为yyyymmddhhmmss+k位随机数
 	  * 
 	  * @param k
-	  *            表示是取几位随机数，可以自己�?
+	  *            表示是取几位随机数，可以自己�?
 	  */
 
 	 public static String getNo(int k) {
@@ -572,7 +572,7 @@ public class DateUtil {
 	 }
 
 	 /**
-	  * 返回�?个随机数
+	  * 返回�?个随机数
 	  * 
 	  * @param i
 	  * @return
@@ -613,8 +613,8 @@ public class DateUtil {
 	 }
 
 	 /***************************************************************************
-	  * //nd=1表示返回的�?�中包含年度 //yf=1表示返回的�?�中包含月份 //rq=1表示返回的�?�中包含日期 //format表示返回的格�? 1
-	  * 以年月日中文返回 2 以横�?-返回 // 3 以斜�?/返回 4 以缩写不带其它符号形式返�? // 5 以点�?.返回
+	  * //nd=1表示返回的�?�中包含年度 //yf=1表示返回的�?�中包含月份 //rq=1表示返回的�?�中包含日期 //format表示返回的格�? 1
+	  * 以年月日中文返回 2 以横�?-返回 // 3 以斜�?/返回 4 以缩写不带其它符号形式返�? // 5 以点�?.返回
 	  **************************************************************************/
 	 public static String getStringDateMonth(String sdate, String nd, String yf, String rq, String format) {
 	  Date currentTime = new Date();
@@ -624,13 +624,13 @@ public class DateUtil {
 	  String s_rq = dateString.substring(8, 10); // 日期
 	  String sreturn = "";
 	  //roc.util.MyChar mc = new roc.util.MyChar();
-	  //if (sdate == null || sdate.equals("") || !mc.Isdate(sdate)) { // 处理空�?�情�?
+	  //if (sdate == null || sdate.equals("") || !mc.Isdate(sdate)) { // 处理空�?�情�?
 	  if (sdate == null || sdate.equals("")){
 	   if (nd.equals("1")) {
 	    sreturn = s_nd;
-	    // 处理间隔�?
+	    // 处理间隔�?
 	    if (format.equals("1"))
-	     sreturn = sreturn + "�?";
+	     sreturn = sreturn + "�?";
 	    else if (format.equals("2"))
 	     sreturn = sreturn + "-";
 	    else if (format.equals("3"))
@@ -642,7 +642,7 @@ public class DateUtil {
 	   if (yf.equals("1")) {
 	    sreturn = sreturn + s_yf;
 	    if (format.equals("1"))
-	     sreturn = sreturn + "�?";
+	     sreturn = sreturn + "�?";
 	    else if (format.equals("2"))
 	     sreturn = sreturn + "-";
 	    else if (format.equals("3"))
@@ -654,19 +654,19 @@ public class DateUtil {
 	   if (rq.equals("1")) {
 	    sreturn = sreturn + s_rq;
 	    if (format.equals("1"))
-	     sreturn = sreturn + "�?";
+	     sreturn = sreturn + "�?";
 	   }
 	  } else {
-	   // 不是空�?�，也是�?个合法的日期值，则先将其转换为标准的时间格式
+	   // 不是空�?�，也是�?个合法的日期值，则先将其转换为标准的时间格式
 	   sdate = getOKDate(sdate);
 	   s_nd = sdate.substring(0, 4); // 年份
 	   s_yf = sdate.substring(5, 7); // 月份
 	   s_rq = sdate.substring(8, 10); // 日期
 	   if (nd.equals("1")) {
 	    sreturn = s_nd;
-	    // 处理间隔�?
+	    // 处理间隔�?
 	    if (format.equals("1"))
-	     sreturn = sreturn + "�?";
+	     sreturn = sreturn + "�?";
 	    else if (format.equals("2"))
 	     sreturn = sreturn + "-";
 	    else if (format.equals("3"))
@@ -678,7 +678,7 @@ public class DateUtil {
 	   if (yf.equals("1")) {
 	    sreturn = sreturn + s_yf;
 	    if (format.equals("1"))
-	     sreturn = sreturn + "�?";
+	     sreturn = sreturn + "�?";
 	    else if (format.equals("2"))
 	     sreturn = sreturn + "-";
 	    else if (format.equals("3"))
@@ -690,7 +690,7 @@ public class DateUtil {
 	   if (rq.equals("1")) {
 	    sreturn = sreturn + s_rq;
 	    if (format.equals("1"))
-	     sreturn = sreturn + "�?";
+	     sreturn = sreturn + "�?";
 	   }
 	  }
 	  return sreturn;
@@ -718,7 +718,7 @@ public class DateUtil {
 
 	 /**
 	  * 
-	  * 功能�?<br/>
+	  * 功能�?<br/>
 	  *
 	  * @author Tony
 	  * @version 2015-3-31 上午09:29:31 <br/>
@@ -730,7 +730,7 @@ public class DateUtil {
 //	  if (!VeStr.Isdate(sdate)) {
 //	   sdate = getStringDateShort();
 //	  }
-//	  // 将�??/”转换为�?-�?
+//	  // 将�??/”转换为�?-�?
 //	  sdate = VeStr.Replace(sdate, "/", "-");
 	  // 如果只有8位长度，则要进行转换
 	  if (sdate.length() == 8)
@@ -741,7 +741,7 @@ public class DateUtil {
 	  return dateString;
 	 }
 	 /** 
-	     * 获取当前时间的前�?天时�? 
+	     * 获取当前时间的前�?天时�? 
 	     * @param cl 
 	     * @return 
 	     */  
@@ -755,14 +755,14 @@ public class DateUtil {
 	    }  
 	      
 	    /** 
-	     * 获取当前时间的后�?天时�? 
+	     * 获取当前时间的后�?天时�? 
 	     * @param cl 
 	     * @return 
 	     */  
 	    private static String getAfterDay(Calendar cl){  
-	        //使用roll方法进行回滚到后�?天的时间  
+	        //使用roll方法进行回滚到后�?天的时间  
 	        //cl.roll(Calendar.DATE, 1);  
-	        //使用set方法直接设置时间�?  
+	        //使用set方法直接设置时间�?  
 	        //int day = cl.get(Calendar.DATE);  
 	        cl.add(Calendar.DATE, 1);  
 	        return formatter.format(cl.getTime());  
@@ -770,7 +770,7 @@ public class DateUtil {
 	      
 	 private static String getDateAMPM(){
 		 GregorianCalendar ca = new GregorianCalendar();
-		 //结果为�??0”是上午     结果为�??1”是下午
+		 //结果为�??0”是上午     结果为�??1”是下午
 		 int i=ca.get(GregorianCalendar.AM_PM);
 		 return i==0?"AM":"PM";
 	 }
