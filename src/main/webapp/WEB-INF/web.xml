@@ -20,7 +20,25 @@ id="WebApp_ID" version="3.0">
     <servlet-name>FileUploadServlet</servlet-name>
     <url-pattern>/servlet/fileServlet</url-pattern>
   </servlet-mapping>
-  <welcome-file-list>
+  
+  
+  
+  
+  	<!-- Handles all requests into the application -->
+    <servlet>
+        <servlet-name>indexServlet</servlet-name>
+        <servlet-class>com.tool.utils.beetl.IndexServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+        <async-supported>true</async-supported>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+  
+  
+  
+<!--   <welcome-file-list>
   <welcome-file>index.jsp</welcome-file>
     <welcome-file>uploadFile.jsp</welcome-file>
   </welcome-file-list>
@@ -31,5 +49,5 @@ id="WebApp_ID" version="3.0">
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
+  </welcome-file-list> -->
 </web-app>

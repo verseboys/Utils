@@ -1,6 +1,8 @@
-package com.tool.utils.json;
+package com.test;
 
 import org.junit.Test;
+
+import com.tool.utils.json.Student;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
