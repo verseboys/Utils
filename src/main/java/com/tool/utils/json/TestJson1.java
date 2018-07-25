@@ -1,6 +1,6 @@
 package com.tool.utils.json;
 
-import org.apache.catalina.User;
+
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -20,7 +20,7 @@ public class TestJson1 {
        
        JSONObject ww=JSON.parseObject(objectStr);
        
-       User aa=JSONObject.toJavaObject(ww, User.class);
+     //  User aa=JSONObject.toJavaObject(ww, User.class);
        
         
         
@@ -30,7 +30,7 @@ public class TestJson1 {
        // Object o=jsonArray.get(0);
         //JSONObject jsonObject2=JSONObject.fromObject(o);
        // Student stu2=(Student)JSONObject.toBean(jsonObject2, Student.class);
-        System.out.println("stu:"+aa);
+        //System.out.println("stu:"+aa);
         //System.out.println("stu2:"+stu2);
 
 	}
