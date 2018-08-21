@@ -3,6 +3,7 @@ package com.tool.utils.map;
 
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -160,14 +161,24 @@ public class ExpiryMap<K, V> extends HashMap<K, V>{
     	return flag;
     }
     public static void main(String[] args) throws InterruptedException {
+    	
+    	long EXPIRY1 = 1000 * 60 * 2;
 		
     	ExpiryMap<String, String> map = new ExpiryMap<>(10);
     	map.put("test", "ankang");
     	map.put("test1", "ankang");
-    	map.put("test2", "ankang", 3000);
-    	System.out.println("test1" + map.get("test"));
-    	Thread.sleep(1000);
+    	map.put("test2", "ankang", 2000);
+    	System.out.println("test1>" + map.get("test"));
     	System.out.println("isInvalid:" + map.isInvalid("test"));
+    	//Thread.sleep(1);
+    	System.out.println("isInvalid:" + map.isInvalid("test"));
+    	
+    	
+    	
+    	System.out.println(System.currentTimeMillis()+"<<>>"+System.currentTimeMillis()+ EXPIRY1);
+    	
+    	
+    	System.out.println(new Date(System.currentTimeMillis())+"<<>>"+new Date(System.currentTimeMillis()+ EXPIRY1));
     	System.out.println("size:" + map.size());
     	System.out.println("size:" + ((HashMap<String, String>)map).size());
     	for (Map.Entry<String, String> m : map.entrySet()) {

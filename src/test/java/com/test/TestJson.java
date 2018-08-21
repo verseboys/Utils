@@ -11,7 +11,7 @@ public class TestJson {
 	
 	
 	@Test
-	public static void jsonStrToJava(){
+	public  void jsonStrToJava(){
         //定义两种不同格式的字符串
         String objectStr="{\"name\":\"JSON\",\"age\":\"24\",\"address\":\"北京市西城区\"}";
         String arrayStr="[{\"name\":\"JSON\",\"age\":\"24\",\"address\":\"北京市西城区\"}]";
