@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Collection; 
 import java.util.List; 
 
-import org.hibernate.Session;
+//import org.hibernate.Session;
 
 
 
@@ -31,7 +31,7 @@ public interface IGenericDao<T, PK extends Serializable> {
   public boolean deleteById(PK id); 
   public boolean deleteAll(Collection<T> entities);
   public int getSize();
-  public Session getSession();
+//  public Session getSession();
   public void flush();
   public void clear();
   public void sessionClose();
