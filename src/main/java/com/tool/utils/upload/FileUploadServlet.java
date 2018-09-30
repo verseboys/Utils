@@ -1,4 +1,4 @@
-package servlet;
+package com.tool.utils.upload;
 
 import java.io.File;
 import java.io.IOException;
@@ -37,7 +37,7 @@ public class FileUploadServlet extends HttpServlet {
  
 
  public void init(ServletConfig config) {
-  // 在web.xml中设置的一个初始化参数
+  // 锟斤拷web.xml锟斤拷锟斤拷锟矫碉拷一锟斤拷锟斤拷始锟斤拷锟斤拷锟斤拷
   savePath = config.getInitParameter("savePath");
   sc = config.getServletContext();
  }
@@ -52,22 +52,22 @@ public class FileUploadServlet extends HttpServlet {
    while (itr.hasNext()) {
     FileItem item = (FileItem) itr.next();
     if (item.isFormField()) {
-     System.out.println("表单参数名:" + item.getFieldName() + "，表单参数值:" + item.getString("UTF-8"));
+     System.out.println("锟斤拷锟斤拷锟斤拷锟斤拷:" + item.getFieldName() + "锟斤拷锟斤拷锟斤拷锟斤拷值:" + item.getString("UTF-8"));
     } else {
      if (item.getName() != null && !item.getName().equals("")) {
-      System.out.println("上传文件的大小:" + item.getSize());
-      System.out.println("上传文件的类型:" + item.getContentType());
-      // item.getName()返回上传文件在客户端的完整路径名称
-      System.out.println("上传文件的名称:" + item.getName());
+      System.out.println("锟较达拷锟侥硷拷锟侥达拷小:" + item.getSize());
+      System.out.println("锟较达拷锟侥硷拷锟斤拷锟斤拷锟斤拷:" + item.getContentType());
+      // item.getName()锟斤拷锟斤拷锟较达拷锟侥硷拷锟节客伙拷锟剿碉拷锟斤拷锟斤拷路锟斤拷锟斤拷锟斤拷
+      System.out.println("锟较达拷锟侥硷拷锟斤拷锟斤拷锟斤拷:" + item.getName());
 
       File tempFile = new File(item.getName());
 
-      //上传文件的保存路径
+      //锟较达拷锟侥硷拷锟侥憋拷锟斤拷路锟斤拷
       File file = new File(sc.getRealPath("/") + savePath, tempFile.getName());
       item.write(file);
-      request.setAttribute("upload.message", "上传文件成功！");
+      request.setAttribute("upload.message", "锟较达拷锟侥硷拷锟缴癸拷锟斤拷");
      }else{
-      request.setAttribute("upload.message", "没有选择上传文件！");
+      request.setAttribute("upload.message", "没锟斤拷选锟斤拷锟较达拷锟侥硷拷锟斤拷");
      }
     }
    }
@@ -75,7 +75,7 @@ public class FileUploadServlet extends HttpServlet {
    e.printStackTrace();
   } catch (Exception e) {
    e.printStackTrace();
-   request.setAttribute("upload.message", "上传文件失败！");
+   request.setAttribute("upload.message", "锟较达拷锟侥硷拷失锟杰ｏ拷");
   }
   request.getRequestDispatcher("/uploadResult.jsp").forward(request, response);
  }
