@@ -2,3 +2,7 @@
 /target/
 /.settings/
 /.settings
+/.project
+/.tern-project
+/.classpath
+/.idea
