@@ -4,7 +4,11 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
+import static cn.hutool.crypto.digest.DigestUtil.md5Hex;
+
+/*
 import org.apache.commons.codec.binary.Hex;
+*/
 
 public class MD5Utils {
 	 
@@ -134,7 +138,7 @@ public class MD5Utils {
 	 *       </p>
 	 */
 	@SuppressWarnings("unused")
-	private static String md5Hex(String str) {
+	/*private static String md5Hex(String str) {
 		try {
 			MessageDigest md = MessageDigest.getInstance("MD5");
 			byte[] digest = md.digest(str.getBytes());
@@ -144,7 +148,7 @@ public class MD5Utils {
 			System.out.println(e.toString());
 			return "";
 		}
-	}
+	}*/
  
 	/**
 	 * 加盐MD5加密

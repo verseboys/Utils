@@ -1,5 +1,6 @@
 package com.test;
 
+import org.junit.After;
 import org.junit.Test;
 
 import com.tool.utils.json.Student;
@@ -30,5 +31,19 @@ public class TestJson {
         System.out.println("stu2:"+stu2);
         
     }
+
+
+        @After
+        public void tearDown() throws Exception {
+
+        }
+
+
+
+    public static void main(String args[]) {
+
+	    System.out.println("Hello World!");
+    }
+
 
 }
